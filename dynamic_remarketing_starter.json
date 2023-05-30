@@ -1,0 +1,284 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-05-08 12:56:32",
+    "containerVersion": {
+        "path": "accounts/171222463/containers/1947060/versions/0",
+        "accountId": "171222463",
+        "containerId": "1947060",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/171222463/containers/1947060",
+            "accountId": "171222463",
+            "containerId": "1947060",
+            "name": "www.gulaylar.com",
+            "publicId": "GTM-TXFCS3",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1637767784352",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/171222463/containers/1947060/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-TXFCS3"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "tagId": "318",
+                "name": "GAds -Dynamic Remarketing",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventItems",
+                        "value": "{{cjs - dynamic_items}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventValue",
+                        "value": "{{dLV-ecommerce.value}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{dLV-event_action}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{const-google-ads-conversion-id}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "NONE"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1683550087919",
+                "firingTriggerId": [
+                    "214",
+                    "232"
+                ],
+                "parentFolderId": "213",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "triggerId": "214",
+                "name": "cEvent-virtual_pv",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "virtual_pv"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1672388953134"
+            },
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "triggerId": "232",
+                "name": "cEvent-ecom_event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ecom_event"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1672388953139"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "variableId": "229",
+                "name": "dLV-event_action",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "event_action"
+                    }
+                ],
+                "fingerprint": "1672388953138",
+                "formatValue": {}
+            },
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "variableId": "230",
+                "name": "const-google-ads-conversion-id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1005634038"
+                    }
+                ],
+                "fingerprint": "1672389203058",
+                "formatValue": {}
+            },
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "variableId": "275",
+                "name": "dLV-ecommerce.value",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.value"
+                    }
+                ],
+                "fingerprint": "1672388953217",
+                "formatValue": {}
+            },
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "variableId": "317",
+                "name": "dlv - ecommerce.items",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.items"
+                    }
+                ],
+                "fingerprint": "1683548410749",
+                "formatValue": {}
+            },
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "variableId": "319",
+                "name": "cjs - dynamic_items",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var products = {{dlv - ecommerce.items}};\n  var dynamic_items = [];\n\n  for (var i = 0; i < products.length; i++) {\n    var item = {\n      id: products[i].item_id,\n      price: parseFloat(products[i].price),\n      quantity: products[i].quantity,\n      google_business_vertical: \"retail\",\n      currency: \"TRY\"\n    };\n\n    dynamic_items.push(item);\n  }\n\n  return dynamic_items;\n}\n"
+                    }
+                ],
+                "fingerprint": "1683550190109",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "171222463",
+                "containerId": "1947060",
+                "folderId": "213",
+                "name": "Marketing & Ads",
+                "fingerprint": "1672388953133"
+            }
+        ],
+        "fingerprint": "1683550591967",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/171222463/containers/1947060/versions/0?apiLink=version"
+    }
+}
